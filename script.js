@@ -14,5 +14,13 @@ console.log(`my address is ${address}.`);
 console.log(`my phone number is ${number}.`);
 console.log(67);
 
+function greet(greetings, names) {
+    if (Array.isArray(names)) {
+        names = names.join(", ");
+        return `${greetings} sa emu, ${names}!`;
+    }
+}
+console.log(greet("mayong aga", ["aljonet", "boi", "soy", "tol", "erp"]));
+
 
 

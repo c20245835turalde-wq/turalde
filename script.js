@@ -22,8 +22,9 @@ function greet(greetings, names) {
 }
 console.log(greet("mayong aga", ["aljonet", "boi", "soy", "tol", "erp"]));
 
-const heading = document.querySelector("h1");
-console.log(heading);
+const heading = document.querySelector("title");
+heading.textContent = "felizardo turalde";
+console.log(heading.textContent);
 
 const contactheading = document.querySelector("#contact h2");
 console.log(contactheading);

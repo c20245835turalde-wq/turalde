@@ -29,10 +29,29 @@ heading.style.backgroundColor = "yellow";
 heading.style.fontSize = "100px";
 console.log(heading.textContent);
 
+heading.addEventListener("click", function () {
+    heading.style.color = "red";
+    console.log("heading was clicked");
+});
+
 const contactheading = document.querySelector("#contact h2");
 console.log(contactheading);
 
 const servicesheading = document.querySelector("#services h2");
 console.log(servicesheading);
 
+const toggleButton = document.querySelector("#switch");
+const body = document.querySelector("body");
+let isOff = false;
 
+toggleButton.addEventListener("click", function () {
+    isOff = !isOff;
+
+    if (isOff) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+    } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+    }
+});

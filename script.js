@@ -22,8 +22,11 @@ function greet(greetings, names) {
 }
 console.log(greet("mayong aga", ["aljonet", "boi", "soy", "tol", "erp"]));
 
-const heading = document.querySelector("title");
+const heading = document.querySelector("h1");
 heading.textContent = "felizardo turalde";
+heading.style.color = "purple";
+heading.style.backgroundColor = "yellow";
+heading.style.fontSize = "100px";
 console.log(heading.textContent);
 
 const contactheading = document.querySelector("#contact h2");

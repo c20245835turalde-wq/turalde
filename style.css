@@ -3,7 +3,7 @@ body {
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 nav {
@@ -17,9 +17,8 @@ nav {
 nav ul {
     display: flex;
     gap: 20px;
-    paadding: 0;
+    padding: 0;
     margin: 0;
-
 }
 
 main {
@@ -28,28 +27,25 @@ main {
     gap: 30px;
     padding: 50px;
     margin: 50px;
-    max-width: 1200px;
 }
 
 main section {
     flex: 1;
-    min-width: 288px;
+    min-width: 280px;
     border: 2px solid black;
-    padding: 20px;
-
+    padding: 20px
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     nav ul {
@@ -60,14 +56,13 @@ form {
     main {
         padding: 15px;
         margin: 10px;
-        gap: 10px;
+        gap: 20px;
     }
 
     main section {
         flex: 1 1 100%;
         min-width: 0;
         padding: 15px;
-
     }
 
     h1 {
@@ -80,15 +75,11 @@ form {
     h2 {
         font-size: 48px;
         color: blue;
-
-
     }
-
 }
 
 nav a {
     transition: color 0.5s ease;
-
 }
 
 nav a:hover {
@@ -96,11 +87,12 @@ nav a:hover {
 }
 
 button {
-    transition: background-color 1s ease;
     background-color: black;
     color: white;
-    border-radius: 10px;
     padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 1s ease;
 }
 
 button:hover {
